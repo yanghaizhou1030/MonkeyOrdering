@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="37dp"
         android:layout_marginStart="37dp"
-        android:layout_marginTop="135dp"
+        android:layout_marginTop="109dp"
         android:text="账号:"
         android:textSize="20sp"
         android:layout_alignParentTop="true"
@@ -31,7 +31,7 @@
         android:layout_alignStart="@+id/textView3" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/editTextUserNameLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="13dp"
@@ -42,7 +42,7 @@
         android:inputType="textEmailAddress"
         android:textAllCaps="true"
         android:background="@drawable/editsharp"
-        android:layout_above="@+id/editText9"
+        android:layout_above="@+id/editTextPasswdLogin"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="53dp"
@@ -50,18 +50,18 @@
         android:layout_marginBottom="42dp" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/editTextPasswdLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="至少6位密码"
         android:inputType="textPassword"
         android:background="@drawable/editsharp"
-        android:layout_alignLeft="@+id/editText8"
-        android:layout_alignStart="@+id/editText8"
+        android:layout_alignLeft="@+id/editTextUserNameLogin"
+        android:layout_alignStart="@+id/editTextUserNameLogin"
         android:layout_alignBottom="@+id/textView4"
-        android:layout_alignRight="@+id/editText8"
-        android:layout_alignEnd="@+id/editText8" />
+        android:layout_alignRight="@+id/editTextUserNameLogin"
+        android:layout_alignEnd="@+id/editTextUserNameLogin" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -70,22 +70,37 @@
         android:layout_marginTop="31dp"
         android:text="自动登录"
         android:textSize="20sp"
-        android:layout_below="@+id/editText9"
-        android:layout_alignLeft="@+id/editText9"
-        android:layout_alignStart="@+id/editText9" />
+        android:layout_below="@+id/editTextPasswdLogin"
+        android:layout_alignLeft="@+id/editTextPasswdLogin"
+        android:layout_alignStart="@+id/editTextPasswdLogin" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/editText9"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignRight="@+id/editText9"
-        android:layout_alignStart="@+id/textView4"
-        android:layout_below="@+id/checkBox"
-        android:layout_marginTop="42dp"
         android:background="#303F9F"
         android:text="登录"
         android:textColor="#FFF"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignRight="@+id/editTextPasswdLogin"
+        android:layout_alignEnd="@+id/editTextPasswdLogin" />
+
+    <Button
+        android:id="@+id/buttonGoToReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#303F9F"
+        android:text="注册"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_alignLeft="@+id/buttonLogin"
+        android:layout_alignStart="@+id/buttonLogin"
+        android:layout_marginTop="40dp"
+        android:layout_alignRight="@+id/buttonLogin"
+        android:layout_alignEnd="@+id/buttonLogin" />
 </RelativeLayout>

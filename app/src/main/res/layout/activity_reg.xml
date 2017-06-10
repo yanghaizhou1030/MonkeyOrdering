@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buttonReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextVerifyCodeReg"
+        android:layout_alignLeft="@+id/editTextVerifyCodeReg"
+        android:layout_alignRight="@+id/editTextVerifyCodeReg"
+        android:layout_alignStart="@+id/editTextVerifyCodeReg"
+        android:layout_below="@+id/editTextVerifyCodeReg"
+        android:layout_marginTop="40dp"
+        android:background="#303F9F"
+        android:text="提交注册"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextVerifyCodeReg"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="验证码"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/editTextPasswdReg"
+        android:layout_alignLeft="@+id/editTextPasswdReg"
+        android:layout_alignStart="@+id/editTextPasswdReg" />
+
+    <EditText
+        android:id="@+id/editTextPasswdReg"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="设置6位以上密码"
+        android:inputType="textEmailAddress"
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/editTextUserNameReg"
+        android:layout_alignStart="@+id/editTextUserNameReg"
+        android:layout_marginBottom="14dp" />
+
+    <EditText
+        android:id="@+id/editTextUserNameReg"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="邮箱／电话"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="81dp"
+        android:layout_alignBottom="@+id/editTextPasswdReg"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="获取验证码"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/editTextVerifyCodeReg"
+        android:layout_alignEnd="@+id/editTextVerifyCodeReg" />
+</RelativeLayout>
