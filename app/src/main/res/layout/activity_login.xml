@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.monkeylive.monkeyordering.MainActivity">
+    android:background="@drawable/back">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -18,110 +17,83 @@
             android:textColor="#FFF"
             android:textSize="20sp"
             android:text="@string/app_name"/>
-
     </RelativeLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="37dp"
-            android:layout_marginStart="37dp"
-            android:layout_marginTop="109dp"
-            android:text="账号:"
-            android:textSize="20sp" />
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="80dp">
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView3"
-            android:layout_alignStart="@+id/textView3"
-            android:layout_below="@+id/textView3"
-            android:layout_marginTop="51dp"
-            android:text="密码:"
-            android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tagAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账号:"
+                android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/editTextUserNameLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/editTextPasswdLogin"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="42dp"
-            android:layout_marginEnd="53dp"
-            android:layout_marginLeft="13dp"
-            android:layout_marginRight="53dp"
-            android:layout_marginStart="13dp"
-            android:layout_toRightOf="@+id/textView3"
-            android:background="@drawable/editsharp"
-            android:ems="10"
-            android:hint="邮箱/电话号码"
-            android:inputType="textEmailAddress"
-            android:textAllCaps="true" />
+            <EditText
+                android:id="@+id/editTextUserNameLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/editsharp"
+                android:hint="邮箱/电话号码"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp" />
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/editTextPasswdLogin"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/textView4"
-            android:layout_alignEnd="@+id/editTextUserNameLogin"
-            android:layout_alignLeft="@+id/editTextUserNameLogin"
-            android:layout_alignRight="@+id/editTextUserNameLogin"
-            android:layout_alignStart="@+id/editTextUserNameLogin"
-            android:background="@drawable/editsharp"
-            android:ems="10"
-            android:hint="至少6位密码"
-            android:inputType="textPassword" />
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp">
 
-        <CheckBox
-            android:id="@+id/checkBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/editTextPasswdLogin"
-            android:layout_alignStart="@+id/editTextPasswdLogin"
-            android:layout_below="@+id/editTextPasswdLogin"
-            android:layout_marginTop="31dp"
-            android:text="自动登录"
-            android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tagPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码:"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/editTextPasswdLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/editsharp"
+                android:hint="至少6位密码"
+                android:inputType="textPassword"/>
+        </LinearLayout>
 
         <Button
             android:id="@+id/buttonLogin"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/editTextPasswdLogin"
-            android:layout_alignLeft="@+id/textView4"
-            android:layout_alignRight="@+id/editTextPasswdLogin"
-            android:layout_alignStart="@+id/textView4"
-            android:layout_below="@+id/checkBox"
-            android:layout_marginTop="37dp"
-            android:background="#303F9F"
             android:text="登录"
-            android:textColor="#FFF"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFF"/>
 
         <Button
             android:id="@+id/buttonGoToReg"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/buttonLogin"
-            android:layout_alignLeft="@+id/buttonLogin"
-            android:layout_alignRight="@+id/buttonLogin"
-            android:layout_alignStart="@+id/buttonLogin"
-            android:layout_below="@+id/buttonLogin"
-            android:layout_marginTop="40dp"
-            android:background="#303F9F"
             android:text="注册"
-            android:textColor="#FFF"
-            android:textSize="20sp" />
-    </RelativeLayout>
-
+            android:textSize="20sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFF"/>
+    </LinearLayout>
 </LinearLayout>
