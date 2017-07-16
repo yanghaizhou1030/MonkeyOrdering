@@ -69,6 +69,7 @@
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/editsharp"
                 android:hint="至少6位密码"
+                android:textSize="20sp"
                 android:inputType="textPassword"/>
         </LinearLayout>
 
